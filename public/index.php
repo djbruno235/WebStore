@@ -1,9 +1,10 @@
+
 <?php
 
 
 
 use core\classes\Database;
-use core\classes\Functions;
+
 //abrir a sessao
 
 session_start();
@@ -13,10 +14,10 @@ require_once('../config.php');
 //carrega todas classe do projecto    
 require_once('../vendor/autoload.php');
 $bd = new Database;
-$b = new Functions;
-$b->teste();
 
-echo "ok";
+$clientes = $bd->select("SELECT * FROM clientes");
+echo "<pre>";
+print_r($clientes);
 /*
 carregar o config
 carregar classes
