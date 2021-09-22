@@ -13,6 +13,5 @@ session_start();
 require_once('../config.php');
 //carrega todas classe do projecto    
 require_once('../vendor/autoload.php');
-
 // Carregar sistemas rota
 require_once('../core/rotas.php'); 
