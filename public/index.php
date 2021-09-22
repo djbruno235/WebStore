@@ -9,9 +9,7 @@ carregar o sistemma de rotas
 //abrir a sessao
 session_start();
 
-//carregar o config
-require_once('../config.php');
-//carrega todas classe do projecto    
+//carrega todas classe do projecto e o config   
 require_once('../vendor/autoload.php');
 // Carregar sistemas rota
 require_once('../core/rotas.php'); 

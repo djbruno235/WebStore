@@ -6,6 +6,7 @@ use Exception;
 
 class App_geral {
 
+    // ======================================================================
     public static function Layouts($estruturas,$dados=null) {
         
         //Verificar se estruturas e um array 
@@ -24,6 +25,13 @@ class App_geral {
         foreach ($estruturas as $estrutura) {
           include("../core/views/$estrutura.php");
         }
+    }
+
+    // ======================================================================
+    public static function ClienteLogado(){
+
+        // verifica se cliente esta logado
+        return isset($_SESSION['cliente']);
     }
 
 }

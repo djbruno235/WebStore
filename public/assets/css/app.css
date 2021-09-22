@@ -1,1 +1,15 @@
 /*app css*/
+.navegacao{
+    background: rgb(154, 171, 194);
+    color: #000;
+}
+.navegacao-item{
+    text-decoration: none;
+}
+.navegacao-item:hover{
+    text-decoration: underline;
+}
+.rodape{
+    background: rgb(60, 74, 82); 
+    color: #fff;
+}

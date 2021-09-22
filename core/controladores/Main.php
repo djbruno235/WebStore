@@ -2,10 +2,9 @@
 
 namespace core\controladores;
 
-use core\classes\Database;
+
 use core\classes\App_geral
 ;
-
 
 
 
@@ -13,19 +12,19 @@ use core\classes\App_geral
 class Main{
 
     // ======================================================================
-
-    public function index(){
-        $db = new Database;
-        $cliente = $db->select('SELECT * FROM clientes');
-
+       public function index(){
+ 
+ 
         $dados =[
-            'titulo' => 'PHPSTORE/INDEX',
-            'clientes' => $cliente
+            'titulo' => APP_NAME. ' - ' . APP_VERSION,
+         
         ];
       
             App_geral::Layouts([
             'layouts/html_header',
+            'menu',
             'inicio',
+            'rodape',
             'layouts/html_footer',
         ], $dados); 
     }
